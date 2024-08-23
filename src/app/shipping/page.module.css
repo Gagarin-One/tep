@@ -1,0 +1,43 @@
+.shipping h1{
+font-size: 60px;
+color: rgb(255, 148, 66);
+max-width: 800px;
+margin:0px auto;
+text-align: center;
+font-weight: 400;
+}
+
+.title{
+  padding: 200px 0;
+  background-image: url(../../../public/truck.jpg);
+  background-size: cover;
+  width: 100vw;
+}
+.shippingSection {
+  display: flex;
+  flex-wrap: wrap;
+
+  color: #fff;
+  max-width: 900px;
+  justify-content: space-around;
+  margin: 200px auto;
+}
+
+.shippingSection img{
+  border-radius:50px;
+  margin: 0 auto;
+}
+
+.shippingSection div{
+  border: 1px solid #414141;
+border-radius:10px;
+  display: flex;
+  flex-direction: column;
+ margin: 20px auto;
+  width: 270px;
+text-align: center;
+}
+.shippingSection p{
+  width: 250px;
+  margin: 20px auto;
+}

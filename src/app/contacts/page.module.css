@@ -1,0 +1,20 @@
+.main div{
+  display:flex;
+  flex-direction:column;
+  color:white;
+}
+.main{
+  width:300px;
+  margin:10px auto;
+}
+.svgContainer{
+  display:flex;
+  width: 200px;
+  margin: 50px;
+}
+.svgContainer h2{
+width: 200px;
+}
+.main h1{
+text-align:center;
+}

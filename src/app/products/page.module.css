@@ -1,0 +1,214 @@
+.productsWrapper{
+  display:flex;
+  flex-wrap: wrap;
+max-width: 900px;
+margin:60px auto;
+color: aliceblue;
+}
+.productsWrapper button{
+color: rgb(185, 185, 185);
+width: 150px;
+height: 50px;
+font-size: 20px;
+background-color: rgb(0, 0, 0);
+border-radius: 10px;
+border: 1px solid #ccc;
+font-weight: 100;
+margin-top: 50px
+}
+.products{
+  margin:0 auto;
+}
+.product{
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:10px;
+  background-color:rgb(0, 0, 0);
+  border-radius:10px;
+  height: 600px;
+  border: 2px solid rgb(43, 42, 42)
+}
+.product img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.product h3{
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.product h2{
+  width: 250px;
+  text-align: center;
+}
+
+.product h4{
+  font-weight: 200;
+  font-size:15px;
+color:rgb(183, 183, 183);
+  width: 150px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.option{
+  width: 180px;
+  
+}
+.popupWrapper{
+  color:black;
+  background-color:white;
+border-radius:15px;
+max-width: 800px;
+min-height:300px;
+
+display:flex;
+flex-direction:column;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+
+}
+.popup{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin:60px auto 0 ;
+justify-content: space-around;
+padding-bottom: 20px;
+border-bottom:1px solid rgb(163, 163, 163);
+}
+.popup .order{
+  display:flex;
+  flex-direction: column;
+  margin:0 20px;
+}
+.orderParams{
+  display:flex;
+}
+
+.popup h1{
+  display: flex;
+  margin:50px 40px 0 20px;
+  align-items: center;
+  color:rgb(93, 93, 93);
+}
+
+.modalOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 400px;
+  padding: 0 10px;
+  
+}
+.form input{
+  width:400px;
+  height:50px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.form label{
+  font-size:20px;
+text-align: left;
+font-weight: 120;
+}
+.form h3{
+  color: #535353;
+  font-weight: 100;
+}
+.btn{
+  color:rgb(255, 255, 255);
+  background-color:black;
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius:10px;
+  margin: 30px auto;
+}
+@media (max-width: 500px) {
+  .form{
+    width:200px;
+  }
+  .form input{
+    width:200px;
+
+  }
+  .btn{
+    height: 50px;
+    width: 200px;
+  }
+}
+
+.successPopup{
+  color:black;
+  background-color:white;
+border-radius:15px;
+max-width: 500px;
+min-height:300px;
+
+display:flex;
+flex-direction:column;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+
+}
+.successPopup h1 {
+  width: 200px;
+  margin:40px auto;
+
+}
+
+.successPopup h2 {
+  width: 200px;
+  margin:0px auto 50px;
+  font-weight: 100;
+}
+.productsWrapper button:hover{
+  color:rgb(114, 114, 114);
+  cursor: pointer;
+  background-color:#212121;
+}
+.desc{
+  color:white;
+  max-width:800px;
+  margin:50px auto;
+  font-size: 20px;
+  text-align: center;
+}
