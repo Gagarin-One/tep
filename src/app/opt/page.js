@@ -14,7 +14,7 @@ export default function Page() {
 
     <main className={styles.main}>
       <div>
-        <Image src="../../../public/334.webp" width="100" height="100" alt="Зимний портативный гараж" />
+        <Image src="/334.webp" width="100" height="100" alt="Зимний портативный гараж" />
         <h1>УСЛОВИЯ ОПТОВОЙ ПРОДАЖИ</h1>
 
         <h3>Количество</h3>

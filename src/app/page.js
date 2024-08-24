@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
 
-      <div className={styles.imgWrapper}><Image src="../../public/1.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
+      <div className={styles.imgWrapper}><Image src="/1.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
 
       <section className={styles.secondSection}>
         <h1>КТО И ГДЕ ПОЛЬЗУЕТСЯ ПОРТАТИВНЫМИ ГАРАЖАМИ</h1>
@@ -52,7 +52,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="../../public/1.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/1.png"  width={500} height={400} priority/></div>
         <div>
           <h1>Крепление портативного гаража</h1>
           <h3>В нижней части чехла есть петли, через которые пропускается нейлоновая веревка или трос (идет в комплекте) для надежной фиксации чехла на автомобиле.
@@ -68,11 +68,11 @@ export default function Home() {
           <h3>Портативный гараж имеет напуск по высоте. Это делается для того, чтобы как можно меньше выдувался теплый воздух из-под днища автомобиля.
           </h3>
         </div>
-        <div className={styles.imgWrapper}><Image src="../../public/2.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/2.png"  width={500} height={400} priority/></div>
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="../../public/3.png" width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/3.png" width={500} height={400} priority/></div>
         <div>
           <h1>Светоотражающие полоски</h1>
           <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
@@ -82,7 +82,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="../../public/4.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/4.png"  width={500} height={400} priority/></div>
         <div >
           <h1>Многослойный материал</h1>
           <ul className={styles.compositionList}>
@@ -105,21 +105,21 @@ export default function Home() {
       </section >
       <section className={styles.characteristicsList}>
         <div>
-          <Image src="../../public/5.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="/5.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Слабо горючая ткань.</h2>
           <h3>Верхнее покрытие выполнено из ткани «Оксфорд», которая может выдержать кратковременное воздействие высоких температур.
           </h3>
 
         </div>
         <div>
-          <Image src="../../public/6.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="/6.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Крепление к колесу</h2>
           <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
           </h3>
 
         </div>
         <div>
-          <Image src="../../public/7.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="/7.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Простеганы все слои</h2>
           <h3>Все слои портативного гаража простеганы, что не позволяет слоям смещаться отностительно друг друга и не растрепываться утеплителю.
           </h3>
@@ -140,7 +140,7 @@ export default function Home() {
         <div className={styles.productLink}>
           <div>
             <Image
-              src="../../public/noroot.png"
+              src="/noroot.png"
 alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -167,7 +167,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="../../public/README.png"
+              src="/README.png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -193,7 +193,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="../../public/noroot (1).png"
+              src="/noroot (1).png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -219,7 +219,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="../../public/noroot (2).png"
+              src="/noroot (2).png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
