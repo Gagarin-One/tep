@@ -52,7 +52,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/public/1.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/1.png"  width={500} height={400} priority/></div>
         <div>
           <h1>Крепление портативного гаража</h1>
           <h3>В нижней части чехла есть петли, через которые пропускается нейлоновая веревка или трос (идет в комплекте) для надежной фиксации чехла на автомобиле.
