@@ -52,7 +52,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/1.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild3661-3333-4663-a136-643837363938/-/format/webp/___.png"  width={500} height={400} priority/></div>
         <div>
           <h1>Крепление портативного гаража</h1>
           <h3>В нижней части чехла есть петли, через которые пропускается нейлоновая веревка или трос (идет в комплекте) для надежной фиксации чехла на автомобиле.
@@ -68,11 +68,11 @@ export default function Home() {
           <h3>Портативный гараж имеет напуск по высоте. Это делается для того, чтобы как можно меньше выдувался теплый воздух из-под днища автомобиля.
           </h3>
         </div>
-        <div className={styles.imgWrapper}><Image src="/2.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild6633-3062-4334-b636-633238303566/-/format/webp/__2.png"  width={500} height={400} priority/></div>
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/3.png" width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild3264-3039-4164-a138-373964333132/-/format/webp/_.png" width={500} height={400} priority/></div>
         <div>
           <h1>Светоотражающие полоски</h1>
           <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
@@ -82,7 +82,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/4.png"  width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild6532-6231-4364-a238-313662363338/-/format/webp/_2.png"  width={500} height={400} priority/></div>
         <div >
           <h1>Многослойный материал</h1>
           <ul className={styles.compositionList}>
@@ -105,21 +105,21 @@ export default function Home() {
       </section >
       <section className={styles.characteristicsList}>
         <div>
-          <Image src="/5.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="https://optim.tildacdn.com/tild3230-6461-4764-a435-623163616431/-/resize/480x/-/format/webp/Screenshot_8.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Слабо горючая ткань.</h2>
           <h3>Верхнее покрытие выполнено из ткани «Оксфорд», которая может выдержать кратковременное воздействие высоких температур.
           </h3>
 
         </div>
         <div>
-          <Image src="/6.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="https://optim.tildacdn.com/tild3533-6664-4333-b131-373138313834/-/resize/480x/-/format/webp/Screenshot_4_1.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Крепление к колесу</h2>
           <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
           </h3>
 
         </div>
         <div>
-          <Image src="/7.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
+          <Image src="https://optim.tildacdn.com/tild3135-3434-4063-a637-633832353837/-/resize/480x/-/format/webp/photo.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Простеганы все слои</h2>
           <h3>Все слои портативного гаража простеганы, что не позволяет слоям смещаться отностительно друг друга и не растрепываться утеплителю.
           </h3>
@@ -140,7 +140,7 @@ export default function Home() {
         <div className={styles.productLink}>
           <div>
             <Image
-              src="/noroot.png"
+              src="https://optim.tildacdn.com/tild3339-6165-4161-b964-613435633539/-/resize/200x/-/format/webp/noroot.png"
 alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -167,7 +167,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="/README.png"
+              src="https://optim.tildacdn.com/tild3030-6661-4039-a463-393634383230/-/resize/200x/-/format/webp/_4f.png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -193,7 +193,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="/noroot (1).png"
+              src="https://optim.tildacdn.com/tild3430-6632-4066-b861-343334366531/-/resize/200x/-/format/webp/noroot.png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}
@@ -219,7 +219,7 @@ alt="Зимний портативный гараж"
           </div>
           <div>
             <Image
-              src="/noroot (2).png"
+              src="https://optim.tildacdn.com/tild6663-6239-4062-b763-376339363530/-/resize/200x/-/format/webp/noroot.png"
               alt="Зимний портативный гараж"
               className={styles.imgSt}
               width={120}

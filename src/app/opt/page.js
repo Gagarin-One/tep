@@ -14,7 +14,7 @@ export default function Page() {
 
     <main className={styles.main}>
       <div>
-        <Image src="/334.webp" width="100" height="100" alt="Зимний портативный гараж" />
+        <Image src="https://thumb.tildacdn.com/tild3130-6436-4039-b239-633430653134/-/format/webp/Product3-WF-512.png.webp" width="100" height="100" alt="Зимний портативный гараж" />
         <h1>УСЛОВИЯ ОПТОВОЙ ПРОДАЖИ</h1>
 
         <h3>Количество</h3>
