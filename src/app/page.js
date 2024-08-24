@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
 
-      <div className={styles.imgWrapper}><Image src="/1.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
+      <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild3661-3333-4663-a136-643837363938/-/format/webp/___.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
 
       <section className={styles.secondSection}>
         <h1>КТО И ГДЕ ПОЛЬЗУЕТСЯ ПОРТАТИВНЫМИ ГАРАЖАМИ</h1>
