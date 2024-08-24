@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['optim.tildacdn.com'],
+    domains: ['optim.tildacdn.com','thumb.tildacdn.com','static.tildacdn.com'],
   }
 };
 
