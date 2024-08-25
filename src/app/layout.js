@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         {children}
         <footer className={styles.footer}>
           <div >
-            <h1>Teplohranitel.ru</h1>
+            <h1>teplohranitel-avto.ru</h1>
             <h3 className={styles.slogan}>Комфорт и тепло для вашей машины</h3>
 
             <p>+7-924-811-08-08</p>

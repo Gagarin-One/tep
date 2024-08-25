@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./page.module.css";
 
-const ContactForm = ({ size, modelType, color, setPopup,setFinishPopup }) => {
+const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [errors, setErrors] = useState({});
@@ -27,7 +27,7 @@ const ContactForm = ({ size, modelType, color, setPopup,setFinishPopup }) => {
       setLoading(true);
       try {
         const phoneNumber = phone
-        const response = await fetch('http://localhost:4000/', {
+        const response = await fetch('https://teplohranitel-avto.ru/api/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const ContactForm = ({ size, modelType, color, setPopup,setFinishPopup }) => {
         console.error('Ошибка:', error);
       } finally {
         setLoading(false);
-        
+
         setPopup(false)
       }
     } else {
@@ -57,7 +57,7 @@ const ContactForm = ({ size, modelType, color, setPopup,setFinishPopup }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      
+
 
       <div className={styles.form}>
         <h3>Заполните все поля</h3>
