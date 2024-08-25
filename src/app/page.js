@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
 
-      <div className={styles.imgWrapper}><Image src="https://optim.tildacdn.com/tild3661-3333-4663-a136-643837363938/-/format/webp/___.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
+      <div className={styles.imgWrapper}><Image src="/2.png" width={780} height={500} alt="Автомобиль зимой" priority/></div>
 
       <section className={styles.secondSection}>
         <h1>КТО И ГДЕ ПОЛЬЗУЕТСЯ ПОРТАТИВНЫМИ ГАРАЖАМИ</h1>
@@ -95,7 +95,7 @@ export default function Home() {
             <li>3. Утеплитель</li>
             <li>4. Термопленка</li>
             <li>5. Полиэстер (исусственный шелк)</li>
-            <li>Нижний слой выполнен из подкладочной полиэфирной ткани (искусственный шелк). Верхний слой покрытие — ткань «Оксфорд»,  Средний слой -утеплитель типа «синтепон» плотностью 260 гр/м.кв. </li>
+            <li>Нижний слой выполнен из подкладочной полиэфирной ткани (искусственный шелк). Верхний слой покрытие — ткань «Оксфорд»,  Средний слой -утеплитель типа «синтепон» плотностью 300 или 350 гр/м.кв. </li>
           </ul>
         </div>
 

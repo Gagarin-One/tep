@@ -2,11 +2,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css";
 import Link from 'next/link'
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Teplohranitel_avto",
+  title: "Teplohranitel-avto",
   description: "Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.",
 };
 
@@ -19,11 +20,30 @@ export default function RootLayout({ children }) {
         <header>
           <div className={styles.description}>
             <b>E-mail: ekonomka07@mail.ru</b>
-            <div className={styles.title}>
-              <h1>teplohranitel-avto.ru</h1>
+            <div className={styles.headerTitle}>
+            <Image
+              src="https://optim.tildacdn.com/tild3339-6165-4161-b964-613435633539/-/resize/200x/-/format/webp/noroot.png"
+alt="Зимний портативный гараж"
+              className={styles.mainLogo}
+              width={110}
+              height={50}
+ 
+              priority
+            />
+              <div >
               <h3>Комфорт и тепло для вашей машины</h3>
+                <h1>TEPLOHRANITEL-AVTO</h1>
+                </div>
+              
+              
             </div>
-            <b>+7-924-811-08-08</b>
+            <div className={styles.phoneNum}>
+            <b>8 914 140 56 01</b>
+            <b>8 924 811 08 08</b>
+            <b>8 (3022) 71 08 08</b>
+            </div>
+            
+
           </div>
           <section className={styles.headerWrapper}>
             <div className={styles.linksWrapper}>
