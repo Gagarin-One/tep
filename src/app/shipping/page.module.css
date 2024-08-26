@@ -9,7 +9,7 @@ font-weight: 400;
 
 .title{
   padding: 200px 0;
-  background-image: url(../../../public/truck.jpg);
+  background-image: url(../../../public/images/truck.jpg);
   background-size: cover;
   width: 100vw;
 }
