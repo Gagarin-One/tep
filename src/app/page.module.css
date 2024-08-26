@@ -83,8 +83,8 @@ cursor: pointer;
     font-size: 25px;
   }
   .imgWrapper img{
-    width: 500px;
-    height: 330px;
+    width: 380px;
+    height: 380px;
   }
   .mainLogo{
     display: none;
@@ -124,12 +124,14 @@ cursor: pointer;
   font-size: 20px;
 }
 .imgWrapper img{
-  width: 300px;
+  width: 280px;
   height: 230px;
 }
 
 }
-
+.imgWrapper :nth-child(3) {
+ margin-top: 0px;
+}
 
 
 .imgSt{

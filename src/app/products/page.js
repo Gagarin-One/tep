@@ -12,28 +12,36 @@ export default function Page() {
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 300 гр/м',
       color: ['серебро'],
-      img: "https://optim.tildacdn.com/tild3661-3333-4663-a136-643837363938/-/format/webp/___.png"
+      img: "/images/IMG_4557.png",
+      imgWidth: 280,
+      imgHeight: 230
     },
     {
       name: "Тепло-Премиум",
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 350 гр/м',
       color: ['серебро'],
-      img: "https://optim.tildacdn.com/tild3661-3333-4663-a136-643837363938/-/format/webp/___.png"
+      img: "/images/IMG_4557.png",
+      imgWidth: 280,
+      imgHeight: 230
     },
     {
       name: "Тепло-Камуфляж",
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 300 гр/м',
       color: ['камуфляж'],
-      img: "https://optim.tildacdn.com/tild6633-3062-4334-b636-633238303566/-/format/webp/__2.png"
+      img: "/images/2.png",
+      imgWidth: 300,
+      imgHeight: 200
     },
     {
       name: "Утепленные гаражные шторы",
       size: ["Стандарт"],
       desc: 'Утепленный полог для гаража',
       color: ['серебро', 'камуфляж'],
-      img: "https://static.tildacdn.com/stor6234-6436-4366-a664-643963343138/64740438.png"
+      img: "/images/10.png",
+      imgWidth: 300,
+      imgHeight: 200
     }
   ]
 
@@ -110,7 +118,7 @@ export default function Page() {
 
               <h1>Ваш заказ:</h1>
               <div className={styles.order}>
-                <Image src={currentPopup.img} width={130} height={100} alt={currentPopup.name} />
+                <Image src={currentPopup.img} width={currentPopup.imgWidth} height={currentPopup.imgHeight} alt={currentPopup.name} />
                 <h2>{currentPopup.name}</h2>
 
                 <div className={styles.orderParams}>
@@ -150,7 +158,7 @@ export default function Page() {
         <div key={product.name} className={styles.products}>
           <div className={styles.product}>
 
-            <Image src={product.img} width={300} height={200} alt={product.name} />
+            <Image src={product.img} width={product.imgWidth} height={product.imgHeight} alt={product.name} />
             <h2>{product.name}</h2>
             <h3>{product.desc}</h3>
             <h4>Размер</h4>
