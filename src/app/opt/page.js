@@ -6,8 +6,8 @@ export default function Page() {
 
   return <>
     <Head>
-      <title>Зимний портативный гараж</title>
-      <meta name="description" content="Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения." />
+      <title>Оптом - Зимний портативный гараж</title>
+      <meta name="description" content="Купите зимний портативный гараж оптом" />
       <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
       <meta name="robots" content="index, follow" />
     </Head>

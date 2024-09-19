@@ -1,10 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://вашдомен.com/sitemap.xml
+Sitemap: https://teplohranitel-avto.ru/sitemap.xml
 
 User-agent: Yandex
 Allow: /
-Sitemap: https://вашдомен.com/sitemap.xml
+Sitemap: https://teplohranitel-avto.ru/sitemap.xml
 
 
 User-agent: Googlebot

@@ -6,11 +6,6 @@ import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Teplohranitel-avto",
-  description: "Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -31,7 +26,7 @@ alt="Зимний портативный гараж"
               priority
             />
               <div >
-              <h3>Комфорт и тепло для вашей машины</h3>
+              <h3>Портативные гаражи</h3>
                 <h1>TEPLOHRANITEL-AVTO</h1>
                 </div>
               
@@ -66,7 +61,7 @@ alt="Зимний портативный гараж"
         <footer className={styles.footer}>
           <div >
             <h1>teplohranitel-avto.ru</h1>
-            <h3 className={styles.slogan}>Комфорт и тепло для вашей машины</h3>
+            <h3 className={styles.slogan}>Портативные гаражи</h3>
 
             <p>+7-924-811-08-08</p>
             <p>email: ekonomka07@mail.ru</p>

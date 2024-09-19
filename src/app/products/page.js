@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useState, useEffect } from "react";
 import ContactForm from "./form";
+import Head from "next/head";
 
 
 export default function Page() {
@@ -93,6 +94,12 @@ export default function Page() {
   }, [selectedProductColor]);
 
   return <div>
+    <Head>
+        <title>Магазин - Зимний портативный гараж</title>
+        <meta name="description" content="Магазин зимних портативных гаражей" />
+        <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
+        <meta name="robots" content="index, follow" />
+      </Head>
     <div>
       {
         <div>{
