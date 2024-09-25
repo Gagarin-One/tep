@@ -13,6 +13,7 @@ export default function Page() {
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 300 гр/м',
       color: ['серебро'],
+      carBody: ['Седан', 'Хэтчбек', 'Минивен', 'Кроссовер'],
       img: "/images/IMG_4557.png",
       imgWidth: 280,
       imgHeight: 230
@@ -22,6 +23,7 @@ export default function Page() {
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 350 гр/м',
       color: ['серебро'],
+      carBody: ['Седан', 'Хэтчбек', 'Минивен', 'Кроссовер'],
       img: "/images/IMG_4557.png",
       imgWidth: 280,
       imgHeight: 230
@@ -31,6 +33,7 @@ export default function Page() {
       size: ['4,0', '4,2', '4,4', '4,6', '4,7', 'ваш размер- (под заказ)'],
       desc: 'Утепленный тент-чехол 300 гр/м',
       color: ['камуфляж'],
+      carBody: ['Седан', 'Хэтчбек', 'Минивен', 'Кроссовер'],
       img: "/images/2.png",
       imgWidth: 300,
       imgHeight: 200
@@ -65,6 +68,13 @@ export default function Page() {
     'Утепленные гаражные шторы': 'серебро',
   })
 
+  let [selectedCarBody, setSelectedCarBody] = useState({
+    'Тепло-Стандарт': 'Седан',
+    'Тепло-Премиум': 'Седан',
+    'Тепло-Камуфляж': 'Седан',
+    'Утепленные гаражные шторы': '',
+  })
+
   const handleSizeChange = (event) => {
     const { name, value } = event.target;
     setSelectedProductSize((prev) => ({
@@ -84,30 +94,32 @@ export default function Page() {
 
   };
 
+  const handleCarBodyChange = (event) => {
+    const { name, value } = event.target;
+    setSelectedCarBody((prev) => ({
+      ...prev,
+      [name]: value
+
+    }));
+
+  };
+
   let openPopup = (currentProduct) => {
     setPopup(!popup)
     setCurrentPopup(currentProduct)
   }
 
-  useEffect(() => {
-    console.log(selectedProductColor);
-  }, [selectedProductColor]);
 
   return <div>
-    <Head>
-        <title>Магазин - Зимний портативный гараж</title>
-        <meta name="description" content="Магазин зимних портативных гаражей" />
-        <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
-        <meta name="robots" content="index, follow" />
-      </Head>
+  
     <div>
       {
         <div>{
-          
+
           finishPopup && <div className={styles.successPopup}>
             <button className={styles.closeButton} onClick={() => setFinishPopup(false)}>
-            &times;
-          </button>
+              &times;
+            </button>
             <h1>Ваш заказ принят!</h1>
             <h2>В ближайшее время с вами свяжется наш администратор</h2>
           </div>
@@ -117,11 +129,11 @@ export default function Page() {
     <div>
       {
         popup && <div className={styles.modalOverlay}>
-           <div className={styles.popupWrapper}>
+          <div className={styles.popupWrapper}>
             <div className={styles.popup}>
-            <button className={styles.closeButton} onClick={() => setPopup(false)}>
-            &times;
-          </button>
+              <button className={styles.closeButton} onClick={() => setPopup(false)}>
+                &times;
+              </button>
 
               <h1>Ваш заказ:</h1>
               <div className={styles.order}>
@@ -137,18 +149,26 @@ export default function Page() {
                   <h3>Размер:</h3>
                   <p>{selectedProductSize[currentPopup.name]}</p>
                 </div>
+                {
+                  currentPopup.name !== 'Утепленные гаражные шторы' && <div className={styles.orderParams}>
+                  <h3>Кузов:</h3>
+                  <p>{selectedCarBody[currentPopup.name]}</p>
+                </div>
+
+                }
+                
 
               </div>
-              
+
             </div>
-            <ContactForm 
-              size={selectedProductSize[currentPopup.name]} 
-              modelType={currentPopup.name} 
+            <ContactForm
+              size={selectedProductSize[currentPopup.name]}
+              modelType={currentPopup.name}
               color={selectedProductColor[currentPopup.name]}
               setPopup={setPopup}
               setFinishPopup={setFinishPopup}
-              />
-              
+            />
+
             <div>
 
             </div>
@@ -194,6 +214,25 @@ export default function Page() {
                 )
               }
             </select>
+            {
+              product.name !== 'Утепленные гаражные шторы' && <h4>Кузов</h4>
+            }
+
+            {product.name !== 'Утепленные гаражные шторы' && <select
+              name={product.name}
+              value={selectedCarBody[product.name]}
+              onChange={handleCarBodyChange}
+              className={styles.option}
+            >
+              {
+                product.carBody.map((carBody) =>
+                  <option key={carBody} value={carBody} >{carBody}</option>
+                )
+              }
+            </select>
+
+            }
+
             <button onClick={() => openPopup(product)}>КУПИТЬ</button>
           </div>
         </div>
@@ -201,11 +240,11 @@ export default function Page() {
       )}
     </div>
     <p className={styles.desc}>
-Основным направлением магазина являются товары для сохранения тепла автомобилей, гаражей и других помещений. У нас в продаже портативные гаражи (утепленные тенты-чехлы), утепленные гаражные шторы.
-Мы выбрали оптимальную толщину наших изделий, которая позволяет сочетать хорошие термоизоляционные свойства с весом изделий.
-</p>
-<p className={styles.desc}>Портативные гаражи за несколько лет использования хорошо зарекомендовали себя как в районах с умеренными зимними температурами, такими как Забайкальский край, Амурская область, Красноярский край, Иркутская область, Сахалин, Камчатка и т. д, так и в районах Крайнего Севера, северных районах Сибири и Дальнего Востока, где зимние значения температур могут достигать — 50 градусов и ниже. </p>
-<p className={styles.desc}>Так же возможен отшив пологов, чехлов, штор из простеганного утепленного материала по размерам заказчика.
-Все представленные простёганные изделия или есть в наличии и отправляются покупателям в течении 1−3-х дней после оплаты заказа. Или, в случае если в наличии нет товара с необходимыми характеристиками, производятся и отправляются покупателям в согласованные сроки напрямую с фабрики Китая.</p>
+      Основным направлением магазина являются товары для сохранения тепла автомобилей, гаражей и других помещений. У нас в продаже портативные гаражи (утепленные тенты-чехлы), утепленные гаражные шторы.
+      Мы выбрали оптимальную толщину наших изделий, которая позволяет сочетать хорошие термоизоляционные свойства с весом изделий.
+    </p>
+    <p className={styles.desc}>Портативные гаражи за несколько лет использования хорошо зарекомендовали себя как в районах с умеренными зимними температурами, такими как Забайкальский край, Амурская область, Красноярский край, Иркутская область, Сахалин, Камчатка и т. д, так и в районах Крайнего Севера, северных районах Сибири и Дальнего Востока, где зимние значения температур могут достигать — 50 градусов и ниже. </p>
+    <p className={styles.desc}>Так же возможен отшив пологов, чехлов, штор из простеганного утепленного материала по размерам заказчика.
+      Все представленные простёганные изделия или есть в наличии и отправляются покупателям в течении 1−3-х дней после оплаты заказа. Или, в случае если в наличии нет товара с необходимыми характеристиками, производятся и отправляются покупателям в согласованные сроки напрямую с фабрики Китая.</p>
   </div>
 }

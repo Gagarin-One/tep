@@ -32,7 +32,7 @@ const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup }) => {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ name, phoneNumber, size, modelType, color, }),
+          body: JSON.stringify({ name, phoneNumber, size, modelType, color, carBody}),
         });
 
         if (!response.ok) {

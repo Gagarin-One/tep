@@ -3,15 +3,13 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Head from "next/head";
 
+
+
+
 export default function Home() {
   return (
     <>
-    <Head>
-        <title>Зимний портативный гараж</title>
-        <meta name="description" content="Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения." />
-        <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
-        <meta name="robots" content="index, follow" />
-      </Head>
+  
       <main className={styles.main}>
       <section className={styles.titleSection}>
         <div className={styles.title}>
@@ -114,7 +112,7 @@ export default function Home() {
         <div>
           <Image src="/images/6.png" width={120} height={120} alt="Зимний портативный гараж" priority/>
           <h2>Крепление к колесу</h2>
-          <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
+          <h3>В передней части наших портативных гаражей пришивается кармашек с люверсами через которые возможно пропустить тросик-замок ( в комплекте) для крепления тента-чехла к колесному диску.
           </h3>
 
         </div>

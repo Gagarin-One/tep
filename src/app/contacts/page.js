@@ -5,12 +5,7 @@ import Head from "next/head";
 export default function Page() {
 
   return <>
-  <Head>
-      <title>Контакты - Зимний портативный гараж</title>
-      <meta name="description" content="Контакты для связи с нами и покупки зимнего портативного гаража" />
-      <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
-      <meta name="robots" content="index, follow" />
-    </Head>
+
   <main className={styles.main}>
     <div>
       <h1>Контакты</h1>
