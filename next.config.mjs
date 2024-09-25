@@ -1,8 +1,33 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['optim.tildacdn.com','thumb.tildacdn.com','static.tildacdn.com','sun9-16.userapi.com'],
-  }
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'optim.tildacdn.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thumb.tildacdn.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.tildacdn.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'sun9-16.userapi.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
