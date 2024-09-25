@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./page.module.css";
 
-const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup }) => {
+const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup,carBody }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [errors, setErrors] = useState({});

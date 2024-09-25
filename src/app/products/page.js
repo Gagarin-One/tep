@@ -111,7 +111,12 @@ export default function Page() {
 
 
   return <div>
-  
+    <Head>
+      <title>Магазин - Зимний портативный гараж</title>
+      <meta name="description" content="Магазин зимних портативных гаражей" />
+      <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
+      <meta name="robots" content="index, follow" />
+    </Head>
     <div>
       {
         <div>{
@@ -167,6 +172,7 @@ export default function Page() {
               color={selectedProductColor[currentPopup.name]}
               setPopup={setPopup}
               setFinishPopup={setFinishPopup}
+              carBody={selectedCarBody[currentPopup.name]}
             />
 
             <div>
