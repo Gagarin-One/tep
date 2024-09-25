@@ -14,7 +14,7 @@ export default function Page() {
       desc: 'Утепленный тент-чехол 300 гр/м',
       color: ['серебро'],
       carBody: ['Седан', 'Хэтчбек', 'Минивен', 'Кроссовер'],
-      img: "/images/IMG_4557.png",
+      img: "/images/IMG_45577.png",
       imgWidth: 280,
       imgHeight: 230
     },
@@ -24,7 +24,7 @@ export default function Page() {
       desc: 'Утепленный тент-чехол 350 гр/м',
       color: ['серебро'],
       carBody: ['Седан', 'Хэтчбек', 'Минивен', 'Кроссовер'],
-      img: "/images/IMG_4557.png",
+      img: "/images/IMG_45577.png",
       imgWidth: 280,
       imgHeight: 230
     },

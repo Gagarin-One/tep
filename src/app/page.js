@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
 
-      <div className={styles.imgWrapper}><Image src="/images/IMG_4557.png" width={600} height={550} alt="Автомобиль зимой" priority/></div>
+      <div className={styles.imgWrapper}><Image src="/images/IMG_45577.png" width={600} height={550} alt="Автомобиль зимой" priority/></div>
 
       <section className={styles.secondSection}>
         <h1>КТО И ГДЕ ПОЛЬЗУЕТСЯ ПОРТАТИВНЫМИ ГАРАЖАМИ</h1>
@@ -50,7 +50,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/images/IMG_4557.png"  width={450} height={440} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/images/IMG_45577.png"  width={450} height={440} priority/></div>
         <div>
           <h1>Крепление портативного гаража</h1>
           <h3>В нижней части чехла есть петли, через которые пропускается нейлоновая веревка или трос (идет в комплекте) для надежной фиксации чехла на автомобиле.
@@ -70,7 +70,7 @@ export default function Home() {
 
       </section>
       <section className={styles.specialSection}>
-        <div className={styles.imgWrapper}><Image src="/images/loop.png" width={500} height={400} priority/></div>
+        <div className={styles.imgWrapper}><Image src="/images/loop7.png" width={500} height={400} priority/></div>
         <div>
           <h1>Светоотражающие полоски</h1>
           <h3>Для дополнительной безопасности и лучшей видимости в ночное время, дополнительно пришиты полоски из светоотражающего материала.
