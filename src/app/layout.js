@@ -3,53 +3,61 @@ import "./globals.css";
 import styles from "./page.module.css";
 import Link from 'next/link'
 import Image from "next/image";
+import { Suspense } from "react";
+import { Metrika } from "./components/metrica";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'Зимний портативный гараж',
   description: 'Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.',
-  keywords: ['зимний гараж', 'портативный гараж', 'гараж для зимы', 'складной гараж', 'тёплый гараж', 'тёплый чехол', 'чехол для автомобиля' ,'зимний чехол', 'складной гараж'],
+  keywords: ['зимний гараж', 'портативный гараж', 'гараж для зимы', 'складной гараж', 'тёплый гараж', 'тёплый чехол', 'чехол для автомобиля', 'зимний чехол', 'складной гараж'],
   alternates: {
-    canonical: '/'}
+    canonical: '/'
+  }
 }
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
 
+     
       <body className={inter.className}>
+     
+      <Suspense>
+          <Metrika />
+        </Suspense>
         <header>
           <div className={styles.description}>
             <b>E-mail: ekonomka07@mail.ru</b>
             <div className={styles.headerTitle}>
-            <Image
-              src="https://optim.tildacdn.com/tild3339-6165-4161-b964-613435633539/-/resize/200x/-/format/webp/noroot.png"
-alt="Зимний портативный гараж"
-              className={styles.mainLogo}
-              width={110}
-              height={50}
- 
-              priority
-            />
+              <Image
+                src="https://optim.tildacdn.com/tild3339-6165-4161-b964-613435633539/-/resize/200x/-/format/webp/noroot.png"
+                alt="Зимний портативный гараж"
+                className={styles.mainLogo}
+                width={110}
+                height={50}
+
+                priority
+              />
               <div >
-              <h3>Портативные гаражи</h3>
+                <h3>Портативные гаражи</h3>
                 <h1>TEPLOHRANITEL-AVTO</h1>
-                </div>
-              
-              
+              </div>
+
+
             </div>
             <div className={styles.phoneNum}>
-            <b>8 914 140 56 01</b>
-            <b>8 924 811 08 08</b>
-            <b>8 (3022) 71 08 08</b>
+              <b>8 914 140 56 01</b>
+              <b>8 924 811 08 08</b>
+              <b>8 (3022) 71 08 08</b>
             </div>
-            
+
 
           </div>
           <section className={styles.headerWrapper}>
             <div className={styles.linksWrapper}>
-              
+
 
               <ul className={styles.links}>
                 <li><Link href="/">ГЛАВНАЯ</Link></li>
@@ -80,11 +88,11 @@ alt="Зимний портативный гараж"
           <div class={styles.footerMenu}>
             <h3>МЕНЮ</h3>
             <ul >
-            <li><Link href="/">ГЛАВНАЯ</Link></li>
-                <li><Link href="/products">МАГАЗИН</Link></li>
-                <li><Link href="/shipping">ОПЛАТА И ДОСТАВКА</Link></li>
-                <li><Link href="/contacts">КОНТАКТЫ</Link></li>
-                <li><Link href="/opt">ОПТ</Link></li>
+              <li><Link href="/">ГЛАВНАЯ</Link></li>
+              <li><Link href="/products">МАГАЗИН</Link></li>
+              <li><Link href="/shipping">ОПЛАТА И ДОСТАВКА</Link></li>
+              <li><Link href="/contacts">КОНТАКТЫ</Link></li>
+              <li><Link href="/opt">ОПТ</Link></li>
             </ul>
 
           </div>
