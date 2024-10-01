@@ -4,19 +4,12 @@ import styles from "./page.module.css";
 import Link from 'next/link'
 import Image from "next/image";
 import { Suspense } from "react";
-import { Metrika } from "./components/metrica";
+import { Metrika } from "@/app/components/metrica";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: 'Зимний портативный гараж',
-  description: 'Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.',
-  keywords: ['зимний гараж', 'портативный гараж', 'гараж для зимы', 'складной гараж', 'тёплый гараж', 'тёплый чехол', 'чехол для автомобиля', 'зимний чехол', 'складной гараж'],
-  alternates: {
-    canonical: '/'
-  }
-}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -1,17 +1,15 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import Head from "next/head";
+export const metadata = {
+  title: 'Портативный гараж - доставка',
+  description: 'Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.',
+  keywords: ['зимний гараж', 'портативный гараж', 'гараж для зимы', 'складной гараж', 'тёплый гараж', 'тёплый чехол', 'чехол для автомобиля', 'зимний чехол', 'складной гараж']
 
+}
 export default function Page() {
 
   return <>
-  <Head>
-        <title>Доставка - Зимний портативный гараж</title>
-        <meta name="description" content="Доставка для зимнего портативного гаража." />
-        <meta name="keywords" content="зимний гараж, портативный гараж, защита автомобиля, гараж для зимы, складной гараж, тёплый гараж" />
-        <meta name="robots" content="index, follow" />
-      </Head>
   <main className={styles.shipping}>
     <div className={styles.title}><h1>ОПЛАТА И ДОСТАВКА</h1></div>
     
