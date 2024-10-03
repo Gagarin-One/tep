@@ -1,23 +1,36 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import Head from "next/head";
+import React, { useEffect, useState } from 'react';
+import AdPopup from "./components/adPopup";
 
 
 
-export const metadata = {
-  title: 'Портативный гараж',
-  description: 'Купите зимний портативный гараж для надежной защиты вашего автомобиля от снега и холода. Удобные и практичные решения для хранения.',
-  keywords: ['зимний гараж', 'портативный гараж', 'гараж для зимы', 'складной гараж', 'тёплый гараж', 'тёплый чехол', 'чехол для автомобиля', 'зимний чехол', 'складной гараж'],
-  alternates: {
-    canonical: '/'
-  }
-}
+
+
 export default function Home() {
+  
+  const [isOpenPopup, setIsOpenPopup] = useState(false)
+
+  useEffect(() => {
+    // Проверяем, был ли пользователь на странице ранее
+    const visited = sessionStorage.getItem('hasVisited');
+
+    if (!visited) {
+      // Если не был, открываем попап и устанавливаем флаг в sessionStorage
+      setIsOpenPopup(true);
+      sessionStorage.setItem('hasVisited', 'true');
+    }
+  }, []);
+
+
   return (
     <>
   
       <main className={styles.main}>
+      {isOpenPopup && <AdPopup setIsOpenPopup={setIsOpenPopup}/>}
+
       <section className={styles.titleSection}>
         <div className={styles.title}>
           <h1 className={styles.mainTitle}>ПОРТАТИВНЫЙ ГАРАЖ</h1>
