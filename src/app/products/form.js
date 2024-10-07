@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import styles from "./page.module.css";
+import Link from 'next/link';
 
 const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup,carBody }) => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const [isAgreed, setIsAgreed] = useState(false);
+
 
   const validate = () => {
     const newErrors = {};
@@ -22,6 +25,11 @@ const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup,carBody 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!isAgreed) {
+      alert('Вы должны согласиться с лицензионным соглашением.');
+      return;
+    }
+
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       setLoading(true);
@@ -80,6 +88,18 @@ const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup,carBody 
         />
         {errors.phone && <span style={{ color: 'red' }}>{errors.phone}</span>}
       </div>
+      <div>
+      <label className={styles.checkBox}>
+          <input
+            type="checkbox"
+            checked={isAgreed}
+            onChange={() => setIsAgreed(!isAgreed)}
+          />
+           <p>Я согласен с <Link href="/agreement">лицензионным соглашением</Link></p>
+        </label>
+      </div>
+      
+
       <button type="submit" disabled={loading} className={styles.btn}>
         {loading ? 'Отправка...' : 'ОФОРМИТЬ ЗАКАЗ'}
       </button>

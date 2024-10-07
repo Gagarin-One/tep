@@ -218,3 +218,13 @@ box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   text-align: center;
 }
+.checkBox{
+  display: flex;
+  max-width: 300px;
+  margin:0 auto;
+
+}
+.checkBox a{
+  color: rgb(255, 148, 66);
+  text-decoration: underline;
+}

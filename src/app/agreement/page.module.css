@@ -1,0 +1,10 @@
+.pageContainer{
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding:10px 30px;
+  
+}
+.pageContainer p{
+  margin-top: 10px;
+}
