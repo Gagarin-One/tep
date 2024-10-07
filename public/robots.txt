@@ -4,11 +4,13 @@ Sitemap: https://teplohranitel-avto.ru/sitemap.xml
 
 User-agent: Yandex
 Allow: /
+Disallow: /agreement
 Sitemap: https://teplohranitel-avto.ru/sitemap.xml
 
 
 User-agent: Googlebot
 Allow: /
+Disallow: /agreement
 Sitemap: https://teplohranitel-avto.ru/sitemap.xml
 
 User-agent: *
