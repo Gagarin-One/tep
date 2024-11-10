@@ -96,6 +96,7 @@ const ContactForm = ({ size, modelType, color, setPopup, setFinishPopup,carBody 
             onChange={() => setIsAgreed(!isAgreed)}
           />
            <p>Я согласен с <Link href="/agreement">обработкой персональных данных</Link></p>
+           
         </label>
       </div>
       
