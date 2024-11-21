@@ -21,7 +21,7 @@ text-align:center;
 .main h3{
   text-align:center;
   font-weight: 100;
-  
+
   }
 .main h2{
   text-align:center;
@@ -34,3 +34,7 @@ margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 10px;
     }
+  .adressCont{
+    color: rgb(255, 148, 66);
+    margin-top: 20px;
+  }
