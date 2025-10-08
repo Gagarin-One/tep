@@ -1,0 +1,441 @@
+.main a{
+cursor: pointer;
+}
+.main a:hover{
+  color:rgb(114, 114, 114);
+  }
+
+.footer li{
+  cursor: pointer;
+}
+.footer li:last-of-type{
+  color: rgb(255, 148, 66);
+}
+.footer li:hover{
+  color:rgb(114, 114, 114);
+}
+
+  .links a{
+    cursor: pointer;
+    }
+    .links a:hover{
+      color:rgb(114, 114, 114);
+      }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  min-height: 100vh;
+  color: white;
+}
+
+@media (min-width: 900px){
+
+  .main h1 {
+    font-size:50px;
+  }
+  .main h2 {
+    font-size: 30px;
+  }
+  .main h3 {
+    font-size: 25px;
+  }
+  .headerTitle{
+
+    margin-right: 35px;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .svgWrapper{
+    flex-direction: column;
+  }
+  .svgWrapper svg{
+    display: none
+  }
+  .headerWrapper{
+    flex-direction: column;
+  }
+  .links{
+  flex-wrap: wrap;
+  }
+  .description .title{
+    order: 0;
+  }
+  .description b{
+    order: 1;
+  }
+  .description{
+    flex-direction: column;
+  }
+  .title{
+    margin-bottom:20px;
+  }
+  .main h1 {
+    font-size:40px;
+  }
+  .main h2 {
+    font-size: 25px;
+  }
+  .main h3 {
+    font-size: 25px;
+  }
+  .imgWrapper img{
+    width: 380px;
+    height: 380px;
+  }
+  .mainLogo{
+    display: none;
+  }
+}
+/* Mobile */
+@media (max-width: 500px) {
+.headerWrapper svg{
+  display: none
+}
+.links{
+ flex-wrap: wrap;
+ 
+}
+.mainLogo{
+  display: none;
+}
+  .description .title{
+    order: 0;
+  }
+  .description b{
+    order: 1;
+  }
+  .description{
+    flex-direction: column;
+  }
+  .title{
+    margin-bottom:20px;
+  }
+  .main h2{
+      font-size: 20px;
+  }
+  .main h1{
+    font-size: 30px;
+}
+.main h3 {
+  font-size: 20px;
+}
+.imgWrapper img{
+  width: 280px;
+  height: 230px;
+}
+
+}
+.imgWrapper :nth-child(3) {
+ margin-top: 0px;
+}
+
+
+.imgSt{
+ margin: 0 auto; 
+}
+
+.main li{
+  font-size:20px;
+  font-weight: 100;
+}
+.main span{
+  font-size:20px;
+  margin: 0 0 10px;
+}
+
+.main h1{
+
+  text-align: center;
+}
+.main h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 300;
+  max-width: 900px;
+}
+.main h3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size:25px;
+  font-weight: 200;
+  max-width: 900px;
+}
+.main section{
+  margin-bottom: 70px;
+}
+.main img{
+  margin:50px 0 ;
+}
+.imgWrapper{
+  text-align: center;
+}
+.title{
+
+  text-align: center;
+}
+.title h3{
+  font-weight:150;
+  color: rgb(194, 194, 194);
+}
+.description b{
+  font-weight:250;
+  color: rgb(194, 194, 194);
+}
+
+.titleSection {
+  background-image: url("../../public/images/doroga_derevia_sneg_198458_2560x1600.jpg");
+  background-size: cover;
+  width: 100vw;
+  height:800px;
+
+}
+.titleSection h2{
+  margin: 30px auto;
+}
+.mainTitle{
+  margin-top: 100px;
+  color: #f8a766;
+}
+.description{
+  margin: 10px auto;
+  padding-bottom: 8px;
+  color: white;
+  display:flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+border-bottom: 1px solid #d0d0d0;
+max-width: 1000px;
+}
+
+.links{
+display: flex;
+justify-content: space-around;
+margin:0 auto;
+}
+
+.svgWrapper{
+  display: flex;
+}
+
+.links li{
+  list-style-type: none;
+  margin: 0 20px 20px;
+  width: 90px;
+  
+}
+.links li:nth-child(3){
+  width: 200px;
+  margin: 0 0px 20px;
+  text-align: center;
+}
+.links li:nth-child(5){
+  width: 40px;
+
+}
+
+.links{
+  color: white;
+display: flex;
+}
+.headerWrapper{
+  margin: 30px auto 15px;
+  display: flex;
+justify-content: space-around;
+}
+.headerWrapper li:last-of-type{
+  color: rgb(255, 148, 66);
+}
+.headerTitle{
+  display: flex;
+
+}
+.headerTitle h3{
+  font-weight:150;
+  color: rgb(194, 194, 194);
+  text-align: center;
+}
+
+.headerTitle img{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.linksWrapper{
+  display: flex;
+
+}
+.linksWrapper svg{
+  margin: 0 10px;
+}
+.secondSection{
+max-width: 1000px;
+}
+.secondSection h2{
+  max-width: 1200px;
+  }
+.specialSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+.specialSection h1{
+  margin:60px 20px 0 20px;
+
+}
+.specialSection div{
+  max-width: 500px;
+
+}
+
+.compositionList{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+margin: 30px;
+  font-size:20px;
+  font-weight: 200;
+  max-width: 900px;
+}
+.compositionList img{
+  margin-top: 40px;
+}
+.characteristicsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+}
+
+.characteristicsList div{
+  max-width: 250px;
+  margin: 0 10px;
+}
+.characteristicsList img{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 100%;
+  align-items: center;
+}
+
+.productLink{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.productLink div{
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+align-items: center;
+margin: 20px;
+}
+.productLink span{
+  display: flex;
+  width: 150px;
+  text-align: center;
+}
+
+.buyBtn{
+  display: flex;
+  width: 160px;
+  height: 50px;
+  border: 1px solid rgb(102, 101, 101);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius:15px;
+  font-size: 28px;
+}
+.footer{
+  background-color:#212121;
+  display: flex;
+  margin:0 auto;
+  justify-content: space-around;
+  color: white;
+  max-width: 1000px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.slogan{
+  max-width: 300px;
+}
+.footer p{
+
+ font-weight: 100;
+}
+.footer ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin:0 auto;
+
+}
+.footer li{
+  font-weight: 100;
+  width: 100px;
+  margin-top: 10px;
+  text-align: center;
+}
+.footer svg{
+  margin-top: 30px;
+}
+.footerMenu{
+  margin-left: 20px;
+  text-align: center;
+}
+.phoneNum{
+  display:flex;
+  flex-direction:column;
+}
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+}
+.modalOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupWrapper{
+  color:black;
+  background-color:white;
+border-radius:15px;
+max-width: 400px;
+min-height:300px;
+max-height:620px;
+display:flex;
+flex-direction:column;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+overflow: scroll;
+}
